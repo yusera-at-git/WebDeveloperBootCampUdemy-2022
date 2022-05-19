@@ -1,0 +1,63 @@
+body {
+  margin: 300px 0;
+}
+h1 {
+  text-align: center;
+  transition: 1s;
+  background-color: aqua;
+  border: 5px solid green;
+  width: 300px;
+  font-size: 1.8em;
+  padding: 0.7em;
+  margin: 20px auto;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+}
+
+h1:nth-of-type(2n) {
+  background-color: blueviolet;
+  transition: 1s;
+}
+h1:nth-of-type(3n) {
+  background-color: chartreuse;
+  transition: 1s;
+}
+h1:nth-of-type(4n) {
+  background-color: coral;
+  transition: 1s;
+}
+section:first-of-type h1:nth-of-type(1) {
+  transform: rotate(45deg);
+  /* transform-origin: bottom right; */
+  transition: 1s;
+}
+section:first-of-type h1:nth-of-type(1):hover {
+  transform: rotate(180deg);
+  background-color: violet;
+}
+section:first-of-type h1:nth-of-type(2):hover {
+  transform: scale(2);
+  background-color: rgb(172, 41, 51);
+}
+section:first-of-type h1:nth-of-type(3):hover {
+  transform: translate(300px);
+  background-color: rgb(172, 41, 51);
+}
+section:first-of-type h1:nth-of-type(4):hover {
+  transform: skew(70deg);
+  background-color: rgb(172, 41, 51);
+  color: white;
+  font-weight: bolder;
+}
+section:last-of-type h1:nth-of-type(1):hover {
+  transform: skew(10deg) translate(300px) scale(2) rotate(180deg);
+  background-color: rgb(172, 41, 51);
+  color: white;
+  font-weight: bolder;
+}
+section:last-of-type h1:nth-of-type(2):hover {
+  transform: skew(10deg) translate(-300px) scale(2) rotate(180deg);
+  background-color: rgb(172, 41, 51);
+  color: white;
+  font-weight: bolder;
+}
